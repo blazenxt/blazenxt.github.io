@@ -512,8 +512,8 @@ footer{border-top:1px solid var(--line);padding:48px 24px 34px;color:var(--muted
     <div>
       <h4>Direct contact</h4>
       <!-- EDIT: apne real links yahan -->
-      <a href="https://t.me/blazenxt" target="_blank" rel="noopener">Telegram — @blazenxt</a>
-      <a href="mailto:bipul@blazenxt.in">bipul@blazenxt.in</a>
+      <a href="https://t.me/blaze_nxt" target="_blank" rel="noopener">Telegram — @blaze_nxt</a>
+      <a href="mailto:bipulkumar@bk.run.place">bipulkumar@bk.run.place</a>
       <a href="https://github.com/blazenxt" target="_blank" rel="noopener">github.com/blazenxt</a>
     </div>
   </div>
@@ -655,7 +655,7 @@ function sendMail(e){
   const m = document.getElementById('msg').value.trim();
   const note = document.getElementById('formNote');
   // EDIT: apna real email yahan
-  const to = 'bipul@blazenxt.in';
+  const to = 'bipulkumar@bk.run.place';
   window.location.href = `mailto:${to}?subject=${encodeURIComponent(s + ' — ' + n)}&body=${encodeURIComponent(m + '\n\n— ' + n + '\n' + em)}`;
   note.style.display = 'block';
   note.textContent = 'Opening your email client…';
@@ -673,12 +673,10 @@ if (mq) mq.innerHTML += mq.innerHTML;
 
 /* ---------- Support chat ---------- */
 const CONTACTS = {
-  telegram: { label: 'Telegram', sub: '@blazenxt', color: '#229ED9', icon: 'TG',
-              url: m => 'https://t.me/blazenxt' },
-  whatsapp: { label: 'WhatsApp', sub: '+91 ••••• •••••', color: '#25D366', icon: 'WA',
-              url: m => 'https://wa.me/919999999999?text=' + encodeURIComponent(m) },
-  email:    { label: 'Email', sub: 'bipul@blazenxt.in', color: '#8b5cf6', icon: 'EM',
-              url: m => 'mailto:bipul@blazenxt.in?subject=' + encodeURIComponent('Portfolio enquiry') + '&body=' + encodeURIComponent(m) }
+  telegram: { label: 'Telegram', sub: '@blaze_nxt', color: '#229ED9', icon: 'TG',
+              url: m => 'https://t.me/blaze_nxt' },
+  email:    { label: 'Email', sub: 'bipulkumar@bk.run.place', color: '#8b5cf6', icon: 'EM',
+              url: m => 'mailto:bipulkumar@bk.run.place?subject=' + encodeURIComponent('Portfolio enquiry') + '&body=' + encodeURIComponent(m) }
 };
 const OPT_ICONS = {
   TG: '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13" stroke="#04121f" stroke-width="1.6" stroke-linecap="round"/></svg>',
