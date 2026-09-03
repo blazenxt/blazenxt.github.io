@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAbFBMVEX+/vz19fO+w8RXZW97hYyts7bP09KJkphxfIPi5OP9/fv8/fu6vsH///tlcXrw8e/g4+H9/fqvtbfa3N3+/v3a3dre4N4OJjYHHi8mOEdLWmWTnKEcMkI0RVLg4t79/fsjMj+aoqdEUV3e4ODxDA9fAAAAFnRSTlMBkvz+/v39/f7JUf79H/7VrIHZ3i6LqEmVPgAABKVJREFUWMOVWOdi2yAQRmKIipi0ausDDFp+/3fsgbaMnPT+JEHcx+0RQk5U3EsKxhiwjj14KYTglXQ2HVH+oybvqf5RUg8AgXHRqm4m1QrOAh57+lG8g7gVQvfGWMnb7oVari1CyM/izfMcn7FSqC5LSkgPJgw/b3n+X0LiC/qKfYKgAD1rsmoUwhkIwxv2BDGgkPT3nxx/MOBE9yVFIQKvs/y6/ZofrSnREB/1Cz9Apb7Dj2owlOH3AaEWDvx3+RGh8uCanS/qT2qA7fnVnvIy0J8bQFMZQw/6CzeuxDIILb5YrRFVfHgT7scLHC2FsYvmqrKBcQ9gF1fcPh3Y8lXPif/KsaUF2swC4NUqI2VKwaq7oshVTx6wZpwMoMSRysrxFW89nTVqg7FJhIIZGBbT+b733lv8gWkxSr7pXwb80Pe9pc/5ZABgdRQgGDpfU21MxxipnA8ypN8WBHVHwxvPxOot5SCgCMUDgG+aDRHAJa4Y9NAPm9KYa+XeI9xD9YeIcbHApIVdABQv4++rfxUFevL1CK4g/OiCZ2RKKimNsQCreOhWes61yvScSPAiC9BR9ogAj0W31XqbuD0wEmaNF4BwBpiMwPtXftTBBHIKoh2A5joWYjHZy73ydx1GADn44AAgkhGlSvzjPcPfoQHJ0QQ7AIU1AibDcWt0tligEQiEg23bsAQSdgFPUxx9oCR9NqnQ5ASoOh0hWWt9akQDxvJHOqI5ETAYCbAjZpTApaThEjmtFtyFXTwcATQCVBmA9Bp2Vj2lA0/xnSvZ7B2ABp0QbKncFhBHqhDgcQlgjI7VHsaW9/usOAFcS2Cg5yypr6IkubL1DkAhALCkPutEdIoVOQBz8oLd2QDQCj65UMkJKGdEeXBwuzcioBH6KQZSnXgRAWsEgfEYiVs6RwkmFXQSNhNN+BwBe0izvQoGfCmXkpCM40/RdMdQNscoPwKwneRJhKO4nQBDTgESjWYmABkeKSHntn+3u/o0E5Zg4mGfqWqnKmZDFLufm2s7pdlBCQ2eOBNWI6hS9qkvMCRJk9Zu6gwqRXU8YFuzQRtSgtV+BRVj2FG6vjSWp1vPt0EqVnQi/FZtVLun2FegzHxar+vYHRuaC9ElpOC6O8cmZHRNap6/NZkTwpvBrwIf23PjMonaDrPNriaU6NdgXJxy6gHMyxgkNKUaiSJdTW8Sx6Q0qaEIPieoSsNadzX8ofXd32nI472h354RV3gKfbVMadhgH/8L8PAgl2H11oynEE1PzA5XbVTl/JVbcNvmUeOs8eKvSksdw6hl6snOH3Eu8vtZFyc9c26fjKsheqfVQp7Fe+JqwQ7TdhzVTgMAo9LFTG8pledChFGuT/N+I+G0bjDeljFLWjecJIhVQp5Xr1tECPuLTA5sUgFTeQ9dBuw4mdUNEYx/bMIKzstYwBSGstjsox4WV5u/2a0L1whPv9ia4vBoq4vls+DjseK80L3C50NzubzWjYyL60X+KYHrr+l1cSPXVAy4eeNUMZwx1D3OPOjr5ov1u0aINN04XL+fbVyZ2icu8NSmkacqyJdUN1z76R8AYcSiQMcQ/8T6ToeM9P8A2TZhpZVqe94AAAAASUVORK5CYII=" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
 <style>
 /* ============================================================
@@ -327,35 +327,27 @@ h1{
 }
 .project:hover{transform:translateY(-8px);border-color:var(--line-2);box-shadow:var(--shadow)}
 .project.hidden{display:none}
-.codewin{
-  position:relative;background:#0a0e1c;border-bottom:1px solid var(--line);overflow:hidden;
+.preview{
+  position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg-2);
 }
-.codewin::before{
-  content:"";position:absolute;top:0;left:0;right:0;height:2px;z-index:2;
-  background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:.35s;
+.preview img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
 }
-.project:hover .codewin::before{opacity:1}
-.cw-bar{
-  display:flex;align-items:center;gap:6px;padding:10px 14px;
-  border-bottom:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.03);
+.project:hover .preview img{transform:scale(1.05)}
+.preview::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(4,6,13,0) 62%,rgba(4,6,13,.38));
 }
-.cwd{width:10px;height:10px;border-radius:50%;flex:none}
-.cwd.r{background:#ff5f57}.cwd.y{background:#febc2e}.cwd.g{background:#28c840}
-.cw-file{margin-left:7px;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.73rem;color:#8ea0c4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.cw-lang{margin-left:auto;font-size:.64rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#9fb4d8;display:flex;align-items:center;gap:6px;flex:none}
-.cw-lang i{width:7px;height:7px;border-radius:50%;flex:none}
-.cw-code{
-  counter-reset:l;margin:0;padding:13px 0 15px;overflow:hidden;
-  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.72rem;line-height:1.75;color:#d5dbeb;
+.preview .tag{
+  position:absolute;top:14px;left:14px;font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:999px;
+  background:rgba(0,0,0,.38);color:#fff;backdrop-filter:blur(8px);letter-spacing:.1em;text-transform:uppercase;z-index:2;
 }
-.cl{display:block;padding:0 14px 0 0;white-space:pre;counter-increment:l}
-.cl::before{content:counter(l);display:inline-block;width:30px;padding-right:13px;text-align:right;color:#3b4a6e;user-select:none}
-.tc{color:#5c6f96;font-style:italic}
-.tk{color:#c792ea}
-.ts{color:#9ece6a}
-.tt{color:#7dcfff}
-.tf{color:#82aaff}
-.tn{color:#ff9e64}
+.preview .lang{
+  position:absolute;top:14px;right:14px;font-size:.72rem;font-weight:700;padding:5px 11px;border-radius:999px;
+  background:rgba(0,0,0,.38);color:#fff;backdrop-filter:blur(8px);z-index:2;display:flex;align-items:center;gap:7px;
+}
+.lang i{width:8px;height:8px;border-radius:50%;flex:none}
 .btn-row{display:flex;gap:10px}
 .btn-row .gh-btn{flex:1}
 .p-body{padding:24px;display:flex;flex-direction:column;flex:1}
@@ -645,8 +637,8 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
   <div class="wrap">
     <div class="section-head reveal" style="text-align:center">
       <span class="eyebrow" style="justify-content:center">Selected work</span>
-      <h2 class="title">Real projects. Real source code.</h2>
-      <p class="lead" style="margin-inline:auto">Every card below renders the actual source code from its repository — these are live products, not mockups. Clone them, use them, break them.</p>
+      <h2 class="title">Products I've designed &amp; built</h2>
+      <p class="lead" style="margin-inline:auto">A few things I've shipped — every card links to the live source on GitHub. Clone them, use them, break them.</p>
     </div>
 
     <div class="filters reveal">
@@ -661,9 +653,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- VenomMusic -->
       <article class="project reveal" data-cat="web">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">src/lib/saavn.ts</span><span class="cw-lang"><i style="background:#3178c6"></i>TypeScript</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tc">/**</span></span><span class="cl"><span class="tc"> * VenomMusic catalog layer — server-side.</span></span><span class="cl"><span class="tc"> * Decrypts media URLs &amp; normalizes the</span></span><span class="cl"><span class="tc"> * messy upstream payloads into clean types.</span></span><span class="cl"><span class="tc"> */</span></span><span class="cl"><span class="tk">const</span> BASE = (process.env.SAAVN_BASE_URL</span><span class="cl">  ?? <span class="ts">'https://www.jiosaavn.com'</span>).replace(<span class="ts">/\/$/</span>, <span class="ts">''</span>)</span><span class="cl"></span></code></pre>
+        <div class="preview">
+          <img src="previews/venommusic.jpg" alt="VenomMusic app preview" loading="lazy">
+          <span class="tag">Music PWA</span>
+          <span class="lang"><i style="background:#3178c6"></i>TypeScript</span>
         </div>
         <div class="p-body">
           <h3>VenomMusic — Neon Music Streaming PWA</h3>
@@ -678,9 +671,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- VibeTube -->
       <article class="project reveal" data-cat="apps">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">lib/main.dart</span><span class="cw-lang"><i style="background:#0175c2"></i>Dart</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tk">final</span> mini = <span class="tt">MiniPlayerController</span>();</span><span class="cl"><span class="tk">final</span> routeObserver = <span class="tt">MiniPlayerRouteObserver</span>(mini);</span><span class="cl"></span><span class="cl"><span class="tc">// Background / headset / lock-screen audio</span></span><span class="cl"><span class="tk">await</span> <span class="tt">AudioHelper</span>.configure();</span><span class="cl"></span><span class="cl"><span class="tc">// Wire up deep links (YouTube URLs)</span></span><span class="cl"><span class="tf">_setupDeepLinkHandler</span>();</span><span class="cl"></span><span class="cl"><span class="tf">runApp</span>(<span class="tt">VibeTubeApp</span>(<span class="tc">…</span>));</span></code></pre>
+        <div class="preview">
+          <img src="previews/vibetube.jpg" alt="VibeTube app preview" loading="lazy">
+          <span class="tag">Android App</span>
+          <span class="lang"><i style="background:#0175c2"></i>Dart</span>
         </div>
         <div class="p-body">
           <h3>VibeTube — Flutter YouTube Client</h3>
@@ -701,9 +695,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- JARVIS -->
       <article class="project reveal" data-cat="ai">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">jarvis.py</span><span class="cw-lang"><i style="background:#3776ab"></i>Python</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tc"># J.A.R.V.I.S. — JUST A RATHER VERY</span></span><span class="cl"><span class="tc">#      INTELLIGENT SYSTEM</span></span><span class="cl"><span class="tk">import</span> config</span><span class="cl"><span class="tk">from</span> speech <span class="tk">import</span> <span class="tf">get_tts_engine</span>, speak</span><span class="cl"><span class="tk">from</span> brain <span class="tk">import</span> <span class="tf">get_brain</span></span><span class="cl"><span class="tk">from</span> skills <span class="tk">import</span> <span class="tf">dispatch_command</span></span><span class="cl"></span></code></pre>
+        <div class="preview">
+          <img src="previews/jarvis.jpg" alt="JARVIS AI assistant preview" loading="lazy">
+          <span class="tag">AI Assistant</span>
+          <span class="lang"><i style="background:#3776ab"></i>Python</span>
         </div>
         <div class="p-body">
           <h3>JARVIS — AI Voice Assistant</h3>
@@ -718,9 +713,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- Dhvani -->
       <article class="project reveal" data-cat="apps">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">lib/main.dart</span><span class="cw-lang"><i style="background:#0175c2"></i>Dart</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tk">void</span> <span class="tf">main</span>() {</span><span class="cl">  <span class="tt">WidgetsFlutterBinding</span>.ensureInitialized();</span><span class="cl">  <span class="tf">runApp</span>(</span><span class="cl">    <span class="tt">MultiProvider</span>(</span><span class="cl">      providers: [</span><span class="cl">        <span class="tt">ChangeNotifierProvider</span>(</span><span class="cl">            create: (_) =&gt; <span class="tt">AudioPlayerProvider</span>()),</span><span class="cl">      ],</span><span class="cl">      child: <span class="tk">const</span> <span class="tt">DhvaniApp</span>(),</span></code></pre>
+        <div class="preview">
+          <img src="previews/dhvani.jpg" alt="Dhvani music app preview" loading="lazy">
+          <span class="tag">Music App</span>
+          <span class="lang"><i style="background:#0175c2"></i>Dart</span>
         </div>
         <div class="p-body">
           <h3>Dhvani — Music Streaming App</h3>
@@ -735,9 +731,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- vault100 -->
       <article class="project reveal" data-cat="security">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">web/armor.js</span><span class="cw-lang"><i style="background:#f1e05a"></i>JavaScript</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tc">/* Vault100 — the armorer: text ⇆ armor. */</span></span><span class="cl"><span class="ts">"use strict"</span>;</span><span class="cl"></span><span class="cl"><span class="tk">const</span> MAX_LETTER = <span class="tn">512</span> * <span class="tn">1024</span>;  <span class="tc">// a letter</span></span><span class="cl"><span class="tk">const</span> te = <span class="tk">new</span> <span class="tt">TextEncoder</span>();</span><span class="cl"></span><span class="cl"><span class="tf">buildLadder</span>(<span class="ts">"#ar-security"</span>);</span><span class="cl"><span class="tf">bindStrength</span>(<span class="ts">"#st-pw1"</span>, <span class="ts">"#st-strength"</span>);</span></code></pre>
+        <div class="preview">
+          <img src="previews/vault100.jpg" alt="vault100 encryption tool preview" loading="lazy">
+          <span class="tag">Encryption</span>
+          <span class="lang"><i style="background:#f1e05a"></i>JavaScript</span>
         </div>
         <div class="p-body">
           <h3>vault100 — Zero-Knowledge Encryption</h3>
@@ -752,9 +749,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- RickyCC -->
       <article class="project reveal" data-cat="ai">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">config.go</span><span class="cw-lang"><i style="background:#00add8"></i>Go</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tc">// Runtime bot configuration. Env vars only</span></span><span class="cl"><span class="tc">// seed on first boot — after that everything</span></span><span class="cl"><span class="tc">// is edited from the admin panel.</span></span><span class="cl"><span class="tk">var</span> (</span><span class="cl">  ReferralTarget = <span class="tn">5</span> <span class="tc">// friends to unlock</span></span><span class="cl">  ClaimsPaused = <span class="tk">false</span></span><span class="cl">  cfgMu        sync.<span class="tt">RWMutex</span></span><span class="cl">)</span></code></pre>
+        <div class="preview">
+          <img src="previews/rickycc.jpg" alt="RickyCC Telegram bot preview" loading="lazy">
+          <span class="tag">Telegram Bot</span>
+          <span class="lang"><i style="background:#00add8"></i>Go</span>
         </div>
         <div class="p-body">
           <h3>RickyCC — Refer &amp; Unlock Bot</h3>
@@ -769,9 +767,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- tv-browser -->
       <article class="project reveal" data-cat="apps">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">lib/main.dart</span><span class="cw-lang"><i style="background:#0175c2"></i>Dart</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tt">Future</span>&lt;<span class="tk">void</span>&gt; <span class="tf">main</span>() <span class="tk">async</span> {</span><span class="cl">  <span class="tt">WidgetsFlutterBinding</span>.ensureInitialized();</span><span class="cl">  <span class="tk">final</span> prefs = <span class="tk">await</span> <span class="tt">SharedPreferences</span>.getInstance();</span><span class="cl">  <span class="tf">runApp</span>(<span class="tt">TvBrowserApp</span>(prefs: prefs));</span><span class="cl">}</span><span class="cl"></span><span class="cl"><span class="tk">class</span> <span class="tt">TvBrowserApp</span> <span class="tk">extends</span> <span class="tt">StatelessWidget</span> {</span></code></pre>
+        <div class="preview">
+          <img src="previews/tvbrowser.jpg" alt="TV browser preview" loading="lazy">
+          <span class="tag">Android TV</span>
+          <span class="lang"><i style="background:#0175c2"></i>Dart</span>
         </div>
         <div class="p-body">
           <h3>tv-browser — Web Browser for Android TV</h3>
@@ -786,9 +785,10 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 
       <!-- AniMela -->
       <article class="project reveal" data-cat="web">
-        <div class="codewin">
-          <div class="cw-bar"><span class="cwd r"></span><span class="cwd y"></span><span class="cwd g"></span><span class="cw-file">app/anime/[slug]/page.tsx</span><span class="cw-lang"><i style="background:#3178c6"></i>TypeScript</span></div>
-          <pre class="cw-code"><code><span class="cl"><span class="tk">export async function</span> <span class="tf">generateMetadata</span>(</span><span class="cl">    { params }: <span class="tt">Props</span>): <span class="tt">Promise</span>&lt;<span class="tt">Metadata</span>&gt; {</span><span class="cl">  <span class="tk">const</span> { slug } = <span class="tk">await</span> params;</span><span class="cl">  <span class="tk">const</span> id = <span class="tf">parseIdFromSlug</span>(slug);</span><span class="cl">  <span class="tk">const</span> data = <span class="tk">await</span> <span class="tf">animeDetail</span>(id);</span><span class="cl">  title = <span class="ts">`${data.title} — AniMela`</span>;</span></code></pre>
+        <div class="preview">
+          <img src="previews/animela.jpg" alt="AniMela anime platform preview" loading="lazy">
+          <span class="tag">Web App</span>
+          <span class="lang"><i style="background:#3178c6"></i>TypeScript</span>
         </div>
         <div class="p-body">
           <h3>AniMela — Anime Discovery Platform</h3>
