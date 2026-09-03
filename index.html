@@ -22,11 +22,11 @@
 :root{
   --bg:#04060d;
   --bg-2:#080c18;
-  --panel:rgba(255,255,255,.028);
-  --panel-2:rgba(255,255,255,.05);
+  --panel:rgba(255,255,255,.04);
+  --panel-2:rgba(255,255,255,.065);
   --text:#e9edf9;
   --muted:#939fbd;
-  --line:rgba(255,255,255,.09);
+  --line:rgba(255,255,255,.11);
   --line-2:rgba(255,255,255,.16);
   --accent:#6d6bff;
   --accent-2:#2dd4ee;
@@ -66,7 +66,7 @@ body{
 ::selection{background:rgba(109,107,255,.45);color:#fff}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-section{padding:110px 24px;position:relative}
+section{padding:110px 24px;position:relative;scroll-margin-top:70px}
 .wrap{max-width:var(--max);margin:0 auto}
 h1,h2,h3,.brand{font-family:var(--font-display)}
 .eyebrow{
@@ -275,8 +275,8 @@ h1{
   color:var(--accent-2);
 }
 .b-card p{color:var(--muted);font-size:.95rem}
-.b-s1{grid-column:span 5}
-.b-s2{grid-column:span 5}
+.b-s1{grid-column:span 6}
+.b-s2{grid-column:span 6}
 .about-list{list-style:none;margin-top:22px;display:grid;gap:12px}
 .about-list li{display:flex;gap:11px;color:var(--muted);font-size:.96rem}
 .about-list li::before{
@@ -288,7 +288,7 @@ h1{
 .about-intro b{color:var(--text)}
 
 /* ---------- Skills ---------- */
-.skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.skills-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
 .skill{padding:24px}
 .skill-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;font-weight:700;font-size:.95rem}
 .skill-top small{color:var(--accent-2);font-weight:800;font-family:var(--font-display)}
@@ -369,7 +369,7 @@ h1{
 .gh-btn:hover{border-color:var(--line-2);transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.25)}
 
 /* ---------- Timeline ---------- */
-.timeline{position:relative;padding-left:38px;max-width:760px}
+.timeline{position:relative;padding-left:38px;max-width:760px;margin:0 auto}
 .timeline::before{
   content:"";position:absolute;left:10px;top:8px;bottom:8px;width:2px;
   background:linear-gradient(180deg,var(--accent),var(--accent-2),transparent);
@@ -534,8 +534,8 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
       <div class="stats">
         <div class="stat"><b data-count="20">0</b><span>Open-Source Repos</span></div>
         <div class="stat"><b data-count="9">0</b><span>Languages Used</span></div>
-        <div class="stat"><b data-count="6">0</b><span>Shipped Products</span></div>
-        <div class="stat"><b data-count="100">0</b><span>% Open Source</span></div>
+        <div class="stat"><b data-count="8">0</b><span>Shipped Products</span></div>
+        <div class="stat"><b data-count="100" data-suffix="%">0</b><span>Open Source</span></div>
       </div>
     </div>
 
@@ -806,8 +806,8 @@ footer .to-top:hover{transform:translateY(-5px);border-color:var(--accent);color
 <!-- ============ JOURNEY ============ -->
 <section id="experience" class="soft">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Journey</span>
+    <div class="section-head reveal" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Journey</span>
       <h2 class="title">Experience &amp; education</h2>
     </div>
 
@@ -976,7 +976,7 @@ const cio = new IntersectionObserver(entries => {
     const el = e.target, target = +el.dataset.count, dur = 1400, start = performance.now();
     (function step(now){
       const p = Math.min((now - start) / dur, 1);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + '+';
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + (el.dataset.suffix ?? '+');
       if (p < 1) requestAnimationFrame(step);
     })(start);
     cio.unobserve(el);
