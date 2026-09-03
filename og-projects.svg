@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+<radialGradient id="g1" cx="20%" cy="10%" r="80%"><stop offset="0%" stop-color="#1a1240"/><stop offset="100%" stop-color="#04060d"/></radialGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#g1)"/>
+<circle cx="1050" cy="80" r="300" fill="#22d3ee" opacity="0.12"/>
+<circle cx="100" cy="580" r="200" fill="#22d3ee" opacity="0.08"/>
+<rect x="80" y="140" width="90" height="6" rx="3" fill="url(#g2)"/>
+<tspan x="80" y="250" font-size="72" font-weight="700" fill="#e9edf9" font-family="Arial,Helvetica,sans-serif">Projects — BlazeNXT</tspan>
+<text x="80" y="366" font-size="30" fill="#939fbd" font-family="Arial,Helvetica,sans-serif">8 shipped products · 100% open source</text>
+<circle cx="1050" cy="480" r="90" fill="#0a0e1c" stroke="url(#g2)" stroke-width="3"/>
+<text x="1050" y="505" font-size="70" font-weight="800" fill="#e9edf9" text-anchor="middle" font-family="Arial,Helvetica,sans-serif">BK</text>
+<text x="80" y="560" font-size="26" fill="#6d7898" font-family="Arial,Helvetica,sans-serif">blazenxt.github.io</text>
+</svg>

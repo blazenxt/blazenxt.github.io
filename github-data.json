@@ -1,0 +1,73 @@
+{
+ "generated_at": "2026-09-03T16:22:18Z",
+ "repos": 29,
+ "stars": 0,
+ "forks": 7,
+ "followers": 0,
+ "languages": {
+  "Python": 10,
+  "TypeScript": 3,
+  "HTML": 4,
+  "JavaScript": 4,
+  "Go": 1,
+  "Dart": 2
+ },
+ "activity": [
+  {
+   "name": "blazenxt.github.io",
+   "pushed_at": "2026-09-03T16:22:18Z",
+   "url": "https://github.com/blazenxt/blazenxt.github.io",
+   "desc": "Personal portfolio website",
+   "private": false
+  },
+  {
+   "name": "AniMela",
+   "pushed_at": "2026-08-30T06:55:00Z",
+   "url": "https://github.com/blazenxt/AniMela",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "bunkmeter",
+   "pushed_at": "2026-08-28T18:50:15Z",
+   "url": "https://github.com/blazenxt/bunkmeter",
+   "desc": "BunkMeter - Safe Bunk Calculator, Attendance Manager & GPA Companion for College",
+   "private": false
+  },
+  {
+   "name": "free-music-search-api",
+   "pushed_at": "2026-08-22T07:03:10Z",
+   "url": "https://github.com/blazenxt/free-music-search-api",
+   "desc": "Legal free-music search API aggregating Creative Commons & public-domain sources",
+   "private": false
+  },
+  {
+   "name": "RickyCC",
+   "pushed_at": "2026-08-03T15:03:14Z",
+   "url": "https://github.com/blazenxt/RickyCC",
+   "desc": "\u2695\ufe0f Premium Card \u2014 Telegram refer & unlock bot (Go + MongoDB). Join channels \u2192 re",
+   "private": false
+  },
+  {
+   "name": "dhvani-music-app",
+   "pushed_at": "2026-07-29T02:47:50Z",
+   "url": "https://github.com/m11galaxym581/dhvani-music-app",
+   "desc": "Dhvani (\u0927\u094d\u0935\u0928\u093f) - Free & Ad-Free Music Streaming App with Full-Length Songs, Real",
+   "private": false
+  },
+  {
+   "name": "tv-browser",
+   "pushed_at": "2026-07-28T12:06:46Z",
+   "url": "https://github.com/blazenxt/tv-browser",
+   "desc": "A D-pad friendly web browser for Android TV, built with Flutter.",
+   "private": false
+  },
+  {
+   "name": "JARVIS-AI-Assistant",
+   "pushed_at": "2026-07-28T07:38:25Z",
+   "url": "https://github.com/blazenxt/JARVIS-AI-Assistant",
+   "desc": "Production-Ready Modular AI Voice & System Assistant Suite with Sci-Fi Holograph",
+   "private": false
+  }
+ ]
+}
