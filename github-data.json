@@ -1,21 +1,99 @@
 {
- "generated_at": "2026-09-03T16:22:18Z",
- "repos": 29,
+ "generated_at": "2026-10-15T17:06:56Z",
+ "repos": 31,
  "stars": 0,
- "forks": 7,
- "followers": 0,
+ "forks": 0,
+ "followers": 1,
  "languages": {
-  "Python": 10,
-  "TypeScript": 3,
+  "Python": 12,
+  "JavaScript": 5,
+  "PHP": 4,
   "HTML": 4,
-  "JavaScript": 4,
+  "TypeScript": 2,
   "Go": 1,
-  "Dart": 2
+  "Dart": 1
  },
  "activity": [
   {
+   "name": "devil-ai",
+   "pushed_at": "2026-10-12T03:17:26Z",
+   "url": "https://github.com/blazenxt/devil-ai",
+   "desc": "\ud83d\ude08 Devil AI \u2014 a full AI chatbot in 100% pure PHP. Gemini/Groq/OpenAI ready, offline demo mode, rate limiting, zero dependencies.",
+   "private": false
+  },
+  {
+   "name": "vault100",
+   "pushed_at": "2026-10-09T04:53:50Z",
+   "url": "https://github.com/blazenxt/vault100",
+   "desc": "\ud83d\udd10 Free, open-source, zero-knowledge file encryption \u2014 XChaCha20-Poly1305 + AES-256-GCM cascade + Argon2id. Browser (offline PWA), CLI and desktop app; vaults interchangeable. No accounts, no uploads, MIT.",
+   "private": false
+  },
+  {
+   "name": "WhatsAppBot-BlazeNXT",
+   "pushed_at": "2026-10-06T13:46:49Z",
+   "url": "https://github.com/blazenxt/WhatsAppBot-BlazeNXT",
+   "desc": "BlazeNXT Bot \u2014 WhatsApp multi-device group management and AI companion bot (www.blazenxt.in)",
+   "private": false
+  },
+  {
+   "name": "jesterpy",
+   "pushed_at": "2026-10-04T01:50:16Z",
+   "url": "https://github.com/blazenxt/jesterpy",
+   "desc": "Pure Python implementation of the WhatsApp Multi-Device protocol",
+   "private": false
+  },
+  {
+   "name": "openstudy",
+   "pushed_at": "2026-10-02T16:09:46Z",
+   "url": "https://github.com/blazenxt/openstudy",
+   "desc": "OpenStudy PHP multi-page free learning dashboard",
+   "private": false
+  },
+  {
+   "name": "shionmusicbot",
+   "pushed_at": "2026-10-02T08:19:05Z",
+   "url": "https://github.com/blazenxt/shionmusicbot",
+   "desc": "Open-source Telegram voice chat music bot for Shion Music bot.",
+   "private": false
+  },
+  {
+   "name": "cbt-pro",
+   "pushed_at": "2026-09-22T09:02:56Z",
+   "url": "https://github.com/blazenxt/cbt-pro",
+   "desc": "CBT Pro \u2014 secure online exam & quiz platform in pure PHP + SQLite. CBT simulator, question bank (MCQ + numeric), negative marking, instant results & analytics.",
+   "private": false
+  },
+  {
+   "name": "multi-tool-bot",
+   "pushed_at": "2026-09-15T05:17:36Z",
+   "url": "https://github.com/blazenxt/multi-tool-bot",
+   "desc": "Privacy-conscious PHP Telegram bot with authenticated Mini Apps and isolated managed clones.",
+   "private": false
+  },
+  {
+   "name": "sahayak",
+   "pushed_at": "2026-09-12T10:07:23Z",
+   "url": "https://github.com/blazenxt/sahayak",
+   "desc": "Sahayak (\u0938\u0939\u093e\u092f\u0915) \u2014 a personal AI agent powered by the CodeCraft API. CLI + web UI, 12 tools, streaming + tool calling.",
+   "private": false
+  },
+  {
+   "name": "ebook-sell-shop",
+   "pushed_at": "2026-09-08T02:02:34Z",
+   "url": "https://github.com/blazenxt/ebook-sell-shop",
+   "desc": "Granth - Premium Ebook Store | Shopify-inspired digital shop with UPI Razorpay Instant Download",
+   "private": false
+  },
+  {
+   "name": "teachers-day-banner",
+   "pushed_at": "2026-09-05T13:52:58Z",
+   "url": "https://github.com/blazenxt/teachers-day-banner",
+   "desc": "Happy Teacher's Day Celebrations \u2014 black & gold banner site",
+   "private": false
+  },
+  {
    "name": "blazenxt.github.io",
-   "pushed_at": "2026-09-03T16:22:18Z",
+   "pushed_at": "2026-09-03T16:46:06Z",
    "url": "https://github.com/blazenxt/blazenxt.github.io",
    "desc": "Personal portfolio website",
    "private": false
@@ -31,28 +109,21 @@
    "name": "bunkmeter",
    "pushed_at": "2026-08-28T18:50:15Z",
    "url": "https://github.com/blazenxt/bunkmeter",
-   "desc": "BunkMeter - Safe Bunk Calculator, Attendance Manager & GPA Companion for College",
+   "desc": "BunkMeter - Safe Bunk Calculator, Attendance Manager & GPA Companion for College Students",
    "private": false
   },
   {
    "name": "free-music-search-api",
    "pushed_at": "2026-08-22T07:03:10Z",
    "url": "https://github.com/blazenxt/free-music-search-api",
-   "desc": "Legal free-music search API aggregating Creative Commons & public-domain sources",
+   "desc": "Legal free-music search API aggregating Creative Commons & public-domain sources. Cloudflare Worker + Node.",
    "private": false
   },
   {
    "name": "RickyCC",
    "pushed_at": "2026-08-03T15:03:14Z",
    "url": "https://github.com/blazenxt/RickyCC",
-   "desc": "\u2695\ufe0f Premium Card \u2014 Telegram refer & unlock bot (Go + MongoDB). Join channels \u2192 re",
-   "private": false
-  },
-  {
-   "name": "dhvani-music-app",
-   "pushed_at": "2026-07-29T02:47:50Z",
-   "url": "https://github.com/m11galaxym581/dhvani-music-app",
-   "desc": "Dhvani (\u0927\u094d\u0935\u0928\u093f) - Free & Ad-Free Music Streaming App with Full-Length Songs, Real",
+   "desc": "\u2695\ufe0f Premium Card \u2014 Telegram refer & unlock bot (Go + MongoDB). Join channels \u2192 refer 5 friends \u2192 claim a reward code.",
    "private": false
   },
   {
@@ -66,7 +137,98 @@
    "name": "JARVIS-AI-Assistant",
    "pushed_at": "2026-07-28T07:38:25Z",
    "url": "https://github.com/blazenxt/JARVIS-AI-Assistant",
-   "desc": "Production-Ready Modular AI Voice & System Assistant Suite with Sci-Fi Holograph",
+   "desc": "Production-Ready Modular AI Voice & System Assistant Suite with Sci-Fi Holographic Web HUD",
+   "private": false
+  },
+  {
+   "name": "cbse-class12-chemistry-solved",
+   "pushed_at": "2026-07-25T10:59:42Z",
+   "url": "https://github.com/blazenxt/cbse-class12-chemistry-solved",
+   "desc": "Complete interactive solutions for CBSE Class 12 Chemistry board exam.",
+   "private": false
+  },
+  {
+   "name": "AnimeVault1",
+   "pushed_at": "2026-07-20T06:55:35Z",
+   "url": "https://github.com/blazenxt/AnimeVault1",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "InstantSounds",
+   "pushed_at": "2026-07-19T04:34:09Z",
+   "url": "https://github.com/blazenxt/InstantSounds",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "first",
+   "pushed_at": "2026-07-16T05:19:13Z",
+   "url": "https://github.com/blazenxt/first",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "SMS-Multi-API-Forwarder",
+   "pushed_at": "2026-07-15T17:18:23Z",
+   "url": "https://github.com/blazenxt/SMS-Multi-API-Forwarder",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "VPS_BlazeNXT",
+   "pushed_at": "2026-07-14T23:43:17Z",
+   "url": "https://github.com/blazenxt/VPS_BlazeNXT",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "Api_admin_bot",
+   "pushed_at": "2026-07-11T12:37:04Z",
+   "url": "https://github.com/blazenxt/Api_admin_bot",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "test_web_-Santander_Bank980",
+   "pushed_at": "2026-07-08T03:44:28Z",
+   "url": "https://github.com/blazenxt/test_web_-Santander_Bank980",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "-Santander_Bank980",
+   "pushed_at": "2026-07-06T18:21:11Z",
+   "url": "https://github.com/blazenxt/-Santander_Bank980",
+   "desc": "@Santander_Bank980",
+   "private": false
+  },
+  {
+   "name": "Music-27june-2026",
+   "pushed_at": "2026-06-27T08:48:19Z",
+   "url": "https://github.com/blazenxt/Music-27june-2026",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "Musictest",
+   "pushed_at": "2026-06-26T08:00:08Z",
+   "url": "https://github.com/blazenxt/Musictest",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "Virtual-wardrobe",
+   "pushed_at": "2026-06-18T05:38:56Z",
+   "url": "https://github.com/blazenxt/Virtual-wardrobe",
+   "desc": "",
+   "private": false
+  },
+  {
+   "name": "copilot-codespaces-vscode",
+   "pushed_at": "2024-10-11T18:08:12Z",
+   "url": "https://github.com/blazenxt/copilot-codespaces-vscode",
+   "desc": "Develop with AI-powered code suggestions using GitHub Copilot and VS Code",
    "private": false
   }
  ]
