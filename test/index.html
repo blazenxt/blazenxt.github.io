@@ -11,107 +11,91 @@
 <meta http-equiv="Expires" content="0" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>/* ============================================================
-   BlazeNXT Portfolio — Template v4 (Neon / Cyberpunk)
+   BlazeNXT Portfolio — Template v5 (Dark Professional)
+   Inspired by nishant.top — clean, metrics-driven, dark-first
    ============================================================ */
 
 :root{
-  --bg:#05050a;
-  --bg-2:#0a0a14;
-  --surface:rgba(10,10,20,.7);
-  --surface-2:rgba(16,16,30,.8);
-  --border:rgba(0,240,255,.18);
-  --border-strong:rgba(0,240,255,.45);
-  --text:#e6faff;
-  --text-2:#9bb6c4;
-  --muted:#5a7a8a;
-  --cyan:#00f0ff;
-  --magenta:#ff2bd6;
-  --amber:#ffb800;
-  --ok:#39ff14;
-  --radius:4px;
-  --radius-lg:8px;
-  --max:1240px;
-  --nav-h:70px;
+  --bg:#0b0c10;
+  --bg-2:#11131a;
+  --surface:#151821;
+  --surface-2:#1c202b;
+  --border:rgba(255,255,255,.08);
+  --border-strong:rgba(255,255,255,.16);
+  --text:#f2f3f5;
+  --text-2:#a8adb8;
+  --muted:#6b707a;
+  --accent:#f59e0b;
+  --accent-2:#3b82f6;
+  --ok:#22c55e;
+  --radius:10px;
+  --radius-lg:16px;
+  --max:1200px;
+  --nav-h:72px;
   --ease:cubic-bezier(.2,.7,.2,1);
   --ease-out:cubic-bezier(.16,1,.3,1);
-  --glow:0 0 18px rgba(0,240,255,.35),0 0 40px rgba(0,240,255,.12);
-  --glow-m:0 0 18px rgba(255,43,214,.35),0 0 40px rgba(255,43,214,.12);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
-  font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   background:var(--bg);color:var(--text);
-  line-height:1.6;font-size:15px;
+  line-height:1.6;font-size:16px;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
-  background-image:
-    linear-gradient(rgba(0,240,255,.04) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(0,240,255,.04) 1px,transparent 1px);
-  background-size:40px 40px;
-}
-body::before{
-  content:'';position:fixed;inset:0;z-index:1;pointer-events:none;
-  background:repeating-linear-gradient(0deg,rgba(0,0,0,.15) 0px,rgba(0,0,0,.15) 1px,transparent 1px,transparent 3px);
-  mix-blend-mode:multiply;opacity:.6;
 }
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
-h1,h2,h3,h4{font-family:'Orbitron','JetBrains Mono',monospace;letter-spacing:.02em;line-height:1.05;font-weight:700;text-transform:uppercase}
-h1{font-size:clamp(2.2rem,6.5vw,5rem)}
-h2{font-size:clamp(1.6rem,3.6vw,2.8rem)}
-h3{font-size:clamp(1rem,1.6vw,1.35rem)}
-p{color:var(--text-2);font-family:'Inter',system-ui,sans-serif}
-code,.mono{font-family:'JetBrains Mono',monospace}
+h1,h2,h3,h4{font-family:'Inter',system-ui,sans-serif;letter-spacing:-.025em;line-height:1.05;font-weight:700}
+h1{font-size:clamp(2.6rem,7vw,5.4rem)}
+h2{font-size:clamp(1.9rem,4vw,3.2rem)}
+h3{font-size:clamp(1.15rem,1.8vw,1.5rem)}
+p{color:var(--text-2)}
+code,.mono{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace}
 
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-.section{padding:90px 0;position:relative;z-index:2}
-.section-tight{padding:50px 0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.section{padding:100px 0;position:relative}
+.section-tight{padding:60px 0}
 .eyebrow{
   display:inline-flex;align-items:center;gap:10px;
-  font-size:.72rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;
-  color:var(--cyan);font-family:'JetBrains Mono',monospace;
+  font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);font-family:'JetBrains Mono',monospace;
 }
-.eyebrow::before{content:'//';color:var(--magenta);margin-right:4px}
+.eyebrow .num{color:var(--accent);margin-right:6px}
 .title{margin:14px 0 18px}
-.lead{font-size:1.05rem;max-width:60ch;color:var(--text-2);font-family:'Inter',system-ui,sans-serif}
+.lead{font-size:1.1rem;max-width:62ch;color:var(--text-2)}
 .center{text-align:center}
 .center .lead{margin-inline:auto}
 
 /* ---------- Nav ---------- */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:50;height:var(--nav-h);
-  background:rgba(5,5,10,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  background:rgba(11,12,16,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
 }
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
-.logo{display:flex;align-items:center;gap:10px;font-family:'Orbitron',monospace;font-weight:700;font-size:1.1rem;letter-spacing:.08em;color:var(--cyan);text-shadow:var(--glow)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
 .logo-mark{
-  width:34px;height:34px;border:1px solid var(--cyan);display:grid;place-items:center;
-  color:var(--cyan);font-size:.9rem;text-shadow:var(--glow);
-  box-shadow:var(--glow);background:rgba(0,240,255,.06);
+  width:30px;height:30px;border-radius:8px;background:var(--accent);color:#0b0c10;
+  display:grid;place-items:center;font-weight:800;font-size:.85rem;
 }
-.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links{display:flex;align-items:center;gap:4px}
 .nav-links a{
-  padding:8px 14px;font-size:.82rem;font-weight:500;color:var(--text-2);
-  border:1px solid transparent;transition:.2s;letter-spacing:.08em;
-  font-family:'JetBrains Mono',monospace;
+  padding:9px 14px;border-radius:8px;font-size:.88rem;font-weight:500;color:var(--text-2);
+  transition:color .2s,background .2s;
 }
-.nav-links a:hover{color:var(--cyan);border-color:var(--border);text-shadow:0 0 8px rgba(0,240,255,.5)}
-.nav-links a.active{color:var(--cyan);border-color:var(--cyan);background:rgba(0,240,255,.08);text-shadow:var(--glow)}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:var(--surface)}
 .nav-cta{
-  padding:9px 18px;border:1px solid var(--magenta);color:var(--magenta);
-  font-size:.82rem;font-weight:600;letter-spacing:.1em;
-  text-shadow:0 0 8px rgba(255,43,214,.5);transition:.2s;
-  font-family:'JetBrains Mono',monospace;
+  padding:10px 18px;border-radius:8px;font-weight:600;font-size:.86rem;
+  background:var(--text);color:var(--bg);transition:transform .2s var(--ease),background .2s;
 }
-.nav-cta:hover{background:var(--magenta);color:var(--bg);box-shadow:var(--glow-m)}
+.nav-cta:hover{transform:translateY(-2px);background:var(--accent);color:#0b0c10}
 .burger{display:none;flex-direction:column;gap:5px;padding:8px}
-.burger span{width:22px;height:2px;background:var(--cyan)}
+.burger span{width:22px;height:2px;background:var(--text)}
 @media (max-width:820px){
   .nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;flex-direction:column;
     background:var(--bg);border-bottom:1px solid var(--border);padding:12px;gap:4px}
@@ -122,174 +106,153 @@ code,.mono{font-family:'JetBrains Mono',monospace}
 
 /* ---------- Buttons ---------- */
 .btn{
-  display:inline-flex;align-items:center;gap:9px;padding:12px 24px;
-  font-weight:600;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;
-  border:1px solid;transition:.2s;font-family:'JetBrains Mono',monospace;
+  display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:8px;
+  font-weight:600;font-size:.9rem;transition:transform .2s var(--ease),background .2s,color .2s;
+  border:1px solid transparent;
 }
-.btn-primary{background:transparent;border-color:var(--cyan);color:var(--cyan);box-shadow:var(--glow)}
-.btn-primary:hover{background:var(--cyan);color:var(--bg);box-shadow:0 0 30px rgba(0,240,255,.6)}
-.btn-ghost{background:transparent;border-color:var(--border-strong);color:var(--text-2)}
-.btn-ghost:hover{border-color:var(--magenta);color:var(--magenta);box-shadow:var(--glow-m)}
+.btn-primary{background:var(--text);color:var(--bg)}
+.btn-primary:hover{transform:translateY(-2px);background:var(--accent);color:#0b0c10}
+.btn-ghost{background:transparent;border-color:var(--border-strong);color:var(--text)}
+.btn-ghost:hover{background:var(--surface);transform:translateY(-2px)}
 
 /* ---------- Hero ---------- */
-.hero{padding:calc(var(--nav-h)+50px) 0 70px;position:relative;z-index:2}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero{padding:calc(var(--nav-h)+70px) 0 80px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:start}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}}
-.hero h1 .glow{color:var(--cyan);text-shadow:var(--glow)}
-.hero h1 .mag{color:var(--magenta);text-shadow:var(--glow-m)}
-.hero-sub{font-size:1.05rem;max-width:52ch;margin:22px 0 34px;color:var(--text-2);font-family:'Inter',system-ui,sans-serif}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-meta{display:flex;flex-wrap:wrap;gap:32px;margin-top:40px;padding-top:24px;border-top:1px solid var(--border)}
-.hero-meta .stat strong{display:block;font-family:'Orbitron',monospace;font-size:1.7rem;color:var(--cyan);text-shadow:0 0 12px rgba(0,240,255,.4)}
-.hero-meta .stat span{font-size:.72rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase}
+.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.hero-eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px rgba(34,197,94,.6)}
+.hero-eyebrow span{font-size:.78rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-family:'JetBrains Mono',monospace}
+.hero h1{margin-bottom:24px}
+.hero h1 .accent{color:var(--accent)}
+.hero-sub{font-size:1.15rem;max-width:52ch;margin-bottom:32px;color:var(--text-2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-top:32px;border-top:1px solid var(--border)}
+.hero-stats .stat strong{display:block;font-family:'Inter',sans-serif;font-size:2rem;font-weight:700;color:var(--text)}
+.hero-stats .stat span{font-size:.78rem;color:var(--muted);letter-spacing:.06em}
 
-.hero-visual{position:relative}
-.hv-box{
-  border:1px solid var(--border);background:var(--surface);padding:6px;
-  box-shadow:var(--glow);position:relative;
+.hero-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:28px;position:sticky;top:calc(var(--nav-h)+24px);
 }
-.hv-box img{width:100%;height:320px;object-fit:cover;display:block;filter:saturate(1.1) contrast(1.05)}
-.hv-box .corner{position:absolute;width:14px;height:14px;border:2px solid var(--magenta)}
-.hv-box .corner.tl{top:-2px;left:-2px;border-right:none;border-bottom:none}
-.hv-box .corner.tr{top:-2px;right:-2px;border-left:none;border-bottom:none}
-.hv-box .corner.bl{bottom:-2px;left:-2px;border-right:none;border-top:none}
-.hv-box .corner.br{bottom:-2px;right:-2px;border-left:none;border-top:none}
-.hv-tag{position:absolute;bottom:14px;left:14px;background:var(--bg);border:1px solid var(--cyan);color:var(--cyan);padding:4px 10px;font-size:.7rem;letter-spacing:.15em;text-shadow:0 0 6px rgba(0,240,255,.5)}
+.hero-card .label{font-size:.72rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;font-family:'JetBrains Mono',monospace}
+.hero-card .row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);font-size:.9rem}
+.hero-card .row:last-child{border-bottom:none}
+.hero-card .row span{color:var(--text-2)}
+.hero-card .row strong{color:var(--text);font-weight:600}
+.hero-card .row strong.accent{color:var(--accent)}
 
-/* ---------- Marquee ---------- */
-.marquee{overflow:hidden;padding:16px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-2)}
-.marquee-track{display:flex;gap:40px;animation:scroll 26s linear infinite;width:max-content}
-.marquee-track span{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:600;color:var(--text-2);white-space:nowrap;letter-spacing:.15em;text-transform:uppercase;display:flex;align-items:center;gap:14px}
-.marquee-track span::before{content:'>';color:var(--magenta)}
-@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* ---------- Section head ---------- */
+.section-head{margin-bottom:48px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.section-head .left{max-width:640px}
+.section-head .eyebrow{margin-bottom:10px}
+.section-head .link{font-size:.85rem;color:var(--text-2);display:inline-flex;align-items:center;gap:6px;transition:.2s}
+.section-head .link:hover{color:var(--accent)}
 
 /* ---------- Cards ---------- */
-.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-@media (max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.bento{grid-template-columns:1fr}}
 .card{
-  background:var(--surface);border:1px solid var(--border);padding:24px;
-  position:relative;backdrop-filter:blur(6px);
-  transition:.25s;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:28px;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;
 }
-.card:hover{border-color:var(--cyan);box-shadow:var(--glow);transform:translateY(-3px)}
-.card .icon{
-  width:40px;height:40px;border:1px solid var(--cyan);display:grid;place-items:center;
-  color:var(--cyan);margin-bottom:14px;font-size:1.1rem;text-shadow:0 0 8px rgba(0,240,255,.5);
-}
-.card h3{margin-bottom:8px;color:var(--text)}
-.card p{font-size:.88rem;font-family:'Inter',system-ui,sans-serif}
-.card.wide{grid-column:span 2}
+.card:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
 
-/* ---------- Projects ---------- */
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
-.filter{
-  padding:8px 16px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  background:transparent;border:1px solid var(--border);color:var(--text-2);
-  transition:.2s;font-family:'JetBrains Mono',monospace;
-}
-.filter:hover{color:var(--cyan);border-color:var(--cyan)}
-.filter.active{background:var(--cyan);color:var(--bg);border-color:var(--cyan);box-shadow:var(--glow)}
-.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media (max-width:900px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.projects-grid{grid-template-columns:1fr}}
+/* ---------- Project cards ---------- */
 .project{
-  background:var(--surface);border:1px solid var(--border);overflow:hidden;
-  display:flex;flex-direction:column;backdrop-filter:blur(6px);
-  transition:.25s;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;
 }
-.project:hover{border-color:var(--cyan);box-shadow:var(--glow);transform:translateY(-4px)}
-.project .preview{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg-2)}
-.project .preview img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:saturate(1.1)}
-.project:hover .preview img{transform:scale(1.06)}
-.project .preview .badges{position:absolute;top:10px;left:10px;display:flex;gap:6px;flex-wrap:wrap}
-.badge{
-  padding:4px 9px;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  background:rgba(5,5,10,.85);border:1px solid var(--border);color:var(--text);
-  font-family:'JetBrains Mono',monospace;
-}
-.badge.lang{display:flex;align-items:center;gap:6px}
-.badge.lang i{width:8px;height:8px;border-radius:50%;display:inline-block}
-.project .p-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
-.project h3{font-size:1.05rem;color:var(--text)}
-.project p{font-size:.85rem;flex:1;font-family:'Inter',system-ui,sans-serif}
-.stack{display:flex;flex-wrap:wrap;gap:6px}
-.stack span{font-size:.68rem;padding:3px 8px;border:1px solid var(--border);color:var(--text-2);letter-spacing:.06em;text-transform:uppercase;font-family:'JetBrains Mono',monospace}
-.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.project:hover{transform:translateY(-6px);border-color:var(--border-strong);box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+.project .preview{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--surface-2)}
+.project .preview img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.project:hover .preview img{transform:scale(1.04)}
+.project .preview .idx{position:absolute;top:14px;left:14px;font-size:.72rem;color:var(--muted);font-family:'JetBrains Mono',monospace;letter-spacing:.1em}
+.project .p-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.project .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.project .meta .tag{font-size:.7rem;padding:4px 9px;border-radius:6px;background:var(--surface-2);color:var(--text-2);border:1px solid var(--border);letter-spacing:.06em;text-transform:uppercase;font-family:'JetBrains Mono',monospace}
+.project h3{font-size:1.15rem;font-weight:600}
+.project p{font-size:.88rem;flex:1}
+.project .metrics{display:flex;gap:18px;padding-top:12px;border-top:1px solid var(--border);margin-top:6px}
+.project .metrics .m strong{display:block;font-size:1.05rem;color:var(--text);font-weight:600}
+.project .metrics .m span{font-size:.7rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.project .btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .gh-btn{
-  padding:7px 13px;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 14px;border-radius:7px;font-size:.8rem;font-weight:500;
   background:transparent;border:1px solid var(--border);color:var(--text-2);
-  transition:.2s;font-family:'JetBrains Mono',monospace;
+  transition:.2s;
 }
-.gh-btn:hover{color:var(--cyan);border-color:var(--cyan)}
+.gh-btn:hover{color:var(--text);border-color:var(--border-strong);background:var(--surface-2)}
 
-/* ---------- Skills ---------- */
-.skill{display:flex;flex-direction:column;gap:8px}
-.skill-top{display:flex;justify-content:space-between;font-size:.82rem}
-.skill-top small{color:var(--muted);font-family:'JetBrains Mono',monospace}
-.bar{height:4px;background:rgba(0,240,255,.1);border:1px solid var(--border);overflow:hidden}
-.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--magenta));box-shadow:0 0 8px rgba(0,240,255,.5);transition:width 1.2s var(--ease-out)}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media (max-width:720px){.projects-grid{grid-template-columns:1fr}}
+
+/* ---------- Experience timeline ---------- */
+.exp{display:flex;flex-direction:column;gap:0}
+.exp-item{
+  display:grid;grid-template-columns:120px 1fr;gap:32px;padding:32px 0;
+  border-bottom:1px solid var(--border);
+}
+@media (max-width:720px){.exp-item{grid-template-columns:1fr;gap:12px}}
+.exp-item .when{font-size:.8rem;color:var(--muted);font-family:'JetBrains Mono',monospace;padding-top:6px}
+.exp-item h3{font-size:1.15rem;font-weight:600;margin-bottom:4px}
+.exp-item .role{font-size:.9rem;color:var(--accent);font-weight:500;margin-bottom:8px}
+.exp-item p{font-size:.9rem}
+
+/* ---------- Field kit / skills ---------- */
+.skill-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--border)}
+.skill-row:last-child{border-bottom:none}
+.skill-row .name{font-size:.92rem;font-weight:500}
+.skill-row .bar-wrap{width:180px;height:4px;background:var(--surface-2);border-radius:999px;overflow:hidden}
+.skill-row .bar-wrap i{display:block;height:100%;width:0;background:var(--accent);border-radius:999px;transition:width 1.2s var(--ease-out)}
+@media (max-width:560px){.skill-row .bar-wrap{width:120px}}
 
 /* ---------- Contact ---------- */
 .contact-box{
-  background:var(--surface);border:1px solid var(--border);padding:56px 40px;
-  text-align:center;position:relative;backdrop-filter:blur(6px);
-  box-shadow:var(--glow);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:56px 44px;
+  text-align:left;position:relative;
 }
-.contact-box h2{margin-bottom:12px;color:var(--text)}
-.contact-box p{max-width:52ch;margin:0 auto 28px}
-.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+.contact-box h2{margin-bottom:12px}
+.contact-box p{max-width:56ch;margin-bottom:28px}
+.contact-links{display:flex;flex-wrap:wrap;gap:10px}
 .contact-link{
-  display:inline-flex;align-items:center;gap:8px;padding:9px 15px;
-  border:1px solid var(--border);font-size:.82rem;color:var(--text-2);
-  letter-spacing:.08em;text-transform:uppercase;transition:.2s;
-  font-family:'JetBrains Mono',monospace;
+  display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:8px;
+  background:var(--surface-2);border:1px solid var(--border);font-size:.88rem;color:var(--text-2);
+  transition:.2s;
 }
-.contact-link:hover{color:var(--cyan);border-color:var(--cyan)}
+.contact-link:hover{color:var(--text);border-color:var(--border-strong)}
 
 /* ---------- Footer ---------- */
-footer{border-top:1px solid var(--border);padding:44px 0;margin-top:40px;background:var(--bg-2)}
+footer{border-top:1px solid var(--border);padding:48px 0;margin-top:60px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
 @media (max-width:720px){.footer-grid{grid-template-columns:1fr}}
-footer h4{font-size:.72rem;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.2em;font-family:'JetBrains Mono',monospace}
-footer a{display:block;color:var(--text-2);font-size:.85rem;padding:4px 0;transition:.2s;font-family:'JetBrains Mono',monospace}
-footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:20px;margin-top:20px;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);flex-wrap:wrap;gap:10px;font-family:'JetBrains Mono',monospace}
+footer h4{font-size:.75rem;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:.16em;font-family:'JetBrains Mono',monospace}
+footer a{display:block;color:var(--text-2);font-size:.9rem;padding:4px 0;transition:.2s}
+footer a:hover{color:var(--text)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;margin-top:24px;border-top:1px solid var(--border);font-size:.82rem;color:var(--muted);flex-wrap:wrap;gap:10px}
 
 /* ---------- Reveal ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease-out),transform .6s var(--ease-out)}
 .reveal.in{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.1s}
 .reveal-delay-2{transition-delay:.2s}
-.reveal-delay-3{transition-delay:.3s}
 
 /* ---------- 404 ---------- */
 .notfound{min-height:70vh;display:grid;place-items:center;text-align:center;padding:40px 24px}
-.notfound h1{font-size:clamp(6rem,20vw,14rem);line-height:.9;color:var(--cyan);text-shadow:var(--glow)}
+.notfound h1{font-size:clamp(6rem,20vw,14rem);line-height:.9;color:var(--accent)}
 
 /* ---------- Blog ---------- */
-.post{display:grid;grid-template-columns:1fr 2.2fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--border)}
+.post{display:grid;grid-template-columns:140px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--border)}
 @media (max-width:720px){.post{grid-template-columns:1fr}}
-.post .meta{font-size:.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.post h3{margin:6px 0 8px;font-size:1.15rem;color:var(--text)}
-.post p{font-size:.88rem}
-
-/* ---------- Timeline ---------- */
-.timeline{position:relative;padding-left:30px}
-.timeline::before{content:'';position:absolute;left:9px;top:0;bottom:0;width:1px;background:var(--border)}
-.tl-item{position:relative;padding-bottom:28px}
-.tl-item::before{content:'';position:absolute;left:-25px;top:6px;width:10px;height:10px;background:var(--cyan);box-shadow:0 0 10px rgba(0,240,255,.6)}
-.tl-item h4{font-size:1rem;margin-bottom:4px;color:var(--text)}
-.tl-item .when{font-size:.75rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.tl-item p{font-size:.88rem;margin-top:4px}
+.post .meta{font-size:.78rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.post h3{margin:6px 0 8px;font-size:1.2rem;font-weight:600}
+.post p{font-size:.9rem}
 
 /* ---------- Misc ---------- */
 .scroll-cue{
-  position:absolute;bottom:18px;left:50%;transform:translateX(-50%);
-  width:22px;height:38px;border:1px solid var(--border-strong);
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  width:22px;height:38px;border:1px solid var(--border-strong);border-radius:11px;
   display:grid;place-items:start center;padding-top:6px;
 }
-.scroll-cue::after{content:'';width:3px;height:8px;background:var(--cyan);box-shadow:0 0 8px rgba(0,240,255,.6);animation:bob 1.6s ease-in-out infinite}
+.scroll-cue::after{content:'';width:3px;height:8px;border-radius:4px;background:var(--accent);animation:bob 1.6s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(12px);opacity:.3}}
 </style>
 </head>
@@ -310,60 +273,66 @@ footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow reveal">// full-stack developer · india</span>
-        <h1 class="reveal reveal-delay-1">Building <span class="glow">bots</span>, <span class="mag">apps</span><br>&amp; platforms that ship.</h1>
-        <p class="hero-sub reveal reveal-delay-2">Bipul Kumar — the developer behind BlazeNXT. Telegram bots, AI assistants, Flutter apps and full-stack web platforms. 100% open source, measured from my own public repos.</p>
+        <div class="hero-eyebrow reveal">
+          <span class="dot"></span>
+          <span>Available for freelance · India</span>
+        </div>
+        <h1 class="reveal reveal-delay-1">Bipul Kumar. <span class="accent">I build bots, apps &amp; platforms that ship.</span></h1>
+        <p class="hero-sub reveal reveal-delay-2">The developer behind BlazeNXT. Telegram bots, AI assistants, Flutter apps and full-stack web platforms. 100% open source, measured from my own public repos.</p>
         <div class="hero-cta reveal reveal-delay-3">
-          <a href="projects.html" class="btn btn-primary">View projects →</a>
+          <a href="projects.html" class="btn btn-primary">See the proof →</a>
           <a href="https://github.com/blazenxt" target="_blank" rel="noopener" class="btn btn-ghost">GitHub profile</a>
         </div>
-        <div class="hero-meta reveal reveal-delay-3">
+        <div class="hero-stats reveal reveal-delay-3">
           <div class="stat"><strong>9+</strong><span>Shipped projects</span></div>
           <div class="stat"><strong>5</strong><span>Tech stacks</span></div>
           <div class="stat"><strong>100%</strong><span>Open source</span></div>
         </div>
       </div>
-      <div class="hero-visual reveal">
-        <div class="hv-box">
-          <img src="../previews/venommusic.jpg" alt="VenomMusic preview" loading="lazy">
-          <span class="corner tl"></span><span class="corner tr"></span>
-          <span class="corner bl"></span><span class="corner br"></span>
-          <span class="hv-tag">LATEST_SHIP :: VenomMusic</span>
-        </div>
+      <div class="hero-card reveal">
+        <div class="label">// current field note</div>
+        <div class="row"><span>Status</span><strong class="accent">Available</strong></div>
+        <div class="row"><span>Location</span><strong>India (remote)</strong></div>
+        <div class="row"><span>Focus</span><strong>Bots · AI · Flutter</strong></div>
+        <div class="row"><span>Reply time</span><strong>&lt; 24h</strong></div>
+        <div class="row"><span>Channel</span><strong>Telegram @blaze_nxt</strong></div>
       </div>
     </div>
   </div>
-  <a href="#featured" class="scroll-cue" aria-label="Scroll down"></a>
+  <a href="#work" class="scroll-cue" aria-label="Scroll down"></a>
 </section>
 
-<div class="marquee">
-  <div class="marquee-track">
-    <span>Telegram Bots</span><span>AI Assistants</span><span>Flutter Apps</span><span>Next.js</span><span>Python Automation</span><span>PHP Chatbots</span><span>REST APIs</span><span>Docker &amp; VPS</span>
-    <span>Telegram Bots</span><span>AI Assistants</span><span>Flutter Apps</span><span>Next.js</span><span>Python Automation</span><span>PHP Chatbots</span><span>REST APIs</span><span>Docker &amp; VPS</span>
-  </div>
-</div>
-
-<section id="featured" class="section">
+<!-- SELECTED WORK -->
+<section id="work" class="section">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">// featured work</span>
-      <h2 class="title">Products I've designed &amp; built.</h2>
-      <p class="lead">A few highlights from my open-source shelf — see all nine on the projects page.</p>
+      <div class="left">
+        <span class="eyebrow"><span class="num">02</span> / SELECTED WORK</span>
+        <h2 class="title">Useful change, built end to end.</h2>
+        <p class="lead">A few highlights from my open-source shelf — see all nine on the projects page.</p>
+      </div>
+      <a href="projects.html" class="link">All projects →</a>
     </div>
     <div class="projects-grid">
       <article class="project reveal">
         <div class="preview">
           <img src="../previews/venommusic.jpg" alt="VenomMusic preview" loading="lazy">
-          <div class="badges"><span class="badge">Android App</span><span class="badge lang"><i style="background:#3178c6"></i>TypeScript</span></div>
+          <span class="idx">CASE / 01</span>
         </div>
         <div class="p-body">
+          <div class="meta"><span class="tag">Android App</span><span class="tag">TypeScript</span></div>
           <h3>VenomMusic — Music Streaming App</h3>
           <p>Free, ad-free music streaming — millions of songs in 320 kbps, synced lyrics, offline downloads, no sign-up.</p>
-          <div class="stack"><span>TypeScript</span><span>PWA</span><span>Android</span></div>
+          <div class="metrics">
+            <div class="m"><strong>320kbps</strong><span>Quality</span></div>
+            <div class="m"><strong>Ad-free</strong><span>Experience</span></div>
+            <div class="m"><strong>Offline</strong><span>Downloads</span></div>
+          </div>
           <div class="btn-row">
             <a class="gh-btn" href="https://venomm.dpdns.org" target="_blank" rel="noopener">Website</a>
             <a class="gh-btn" href="https://apkpure.com/p/com.blazenxt.venommusic" target="_blank" rel="noopener">APK</a>
@@ -373,12 +342,17 @@ footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
       <article class="project reveal reveal-delay-1">
         <div class="preview">
           <img src="../previews/vibetube.jpg" alt="VibeTube preview" loading="lazy">
-          <div class="badges"><span class="badge">Android App</span><span class="badge lang"><i style="background:#0175c2"></i>Dart</span></div>
+          <span class="idx">CASE / 02</span>
         </div>
         <div class="p-body">
+          <div class="meta"><span class="tag">Android App</span><span class="tag">Dart</span></div>
           <h3>VibeTube — Flutter YouTube Client</h3>
           <p>Open-source YouTube client for Android — mini player, PiP, background media, SponsorBlock, Live &amp; Shorts.</p>
-          <div class="stack"><span>Flutter</span><span>Dart</span><span>PiP</span></div>
+          <div class="metrics">
+            <div class="m"><strong>PiP</strong><span>Support</span></div>
+            <div class="m"><strong>SponsorBlock</strong><span>Built-in</span></div>
+            <div class="m"><strong>Flutter</strong><span>Stack</span></div>
+          </div>
           <div class="btn-row">
             <a class="gh-btn" href="https://code-stride.github.io/VibeTube/" target="_blank" rel="noopener">Live Site</a>
             <a class="gh-btn" href="https://github.com/Code-Stride/VibeTube" target="_blank" rel="noopener">Code</a>
@@ -388,12 +362,17 @@ footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
       <article class="project reveal reveal-delay-2">
         <div class="preview">
           <img src="../previews/devilai.jpg" alt="Devil AI preview" loading="lazy">
-          <div class="badges"><span class="badge">AI Chatbot</span><span class="badge lang"><i style="background:#4F5D95"></i>PHP</span></div>
+          <span class="idx">CASE / 03</span>
         </div>
         <div class="p-body">
+          <div class="meta"><span class="tag">AI Chatbot</span><span class="tag">PHP</span></div>
           <h3>Devil AI — Pure PHP Chatbot</h3>
           <p>Full AI chatbot in 100% pure PHP — Gemini/Groq/OpenAI ready, offline demo mode, rate limiting, zero dependencies.</p>
-          <div class="stack"><span>PHP</span><span>Gemini</span><span>Groq</span><span>OpenAI</span></div>
+          <div class="metrics">
+            <div class="m"><strong>0 deps</strong><span>Dependencies</span></div>
+            <div class="m"><strong>3 providers</strong><span>AI backends</span></div>
+            <div class="m"><strong>Offline</strong><span>Demo mode</span></div>
+          </div>
           <div class="btn-row">
             <a class="gh-btn" href="https://ai.blazenxt.in" target="_blank" rel="noopener">Live Site</a>
             <a class="gh-btn" href="https://github.com/blazenxt/devil-ai" target="_blank" rel="noopener">Code</a>
@@ -401,59 +380,114 @@ footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
         </div>
       </article>
     </div>
-    <div style="text-align:center;margin-top:44px" class="reveal">
-      <a href="projects.html" class="btn btn-primary">View All 9 Projects →</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="left">
+        <span class="eyebrow"><span class="num">01</span> / ABOUT</span>
+        <h2 class="title">Close to the problem. Close to the build.</h2>
+        <p class="lead">I'm a self-taught full-stack developer. I get into the workflow, trace the data, and turn an unclear request into something a team can use. I spend most of my time on Telegram bots, AI assistants and Flutter apps.</p>
+      </div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <p style="font-size:1rem;margin-bottom:16px">I use modern tooling to build quickly, while owning the requirements, architecture, integrations and pre-deployment checks. I stay close to adoption, exceptions and handover so the result works in daily use.</p>
+        <p style="font-size:1rem">Every project lives in the open on GitHub — no black boxes. Based in India, working remotely, collaborating globally. Fastest on Telegram — @blaze_nxt.</p>
+        <div style="margin-top:24px">
+          <a href="https://t.me/blaze_nxt" target="_blank" rel="noopener" class="btn btn-primary">Message on Telegram</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="label" style="font-size:.72rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;font-family:'JetBrains Mono',monospace">// current field note</div>
+        <div class="row" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-2)">Status</span><strong style="color:var(--accent)">Available</strong></div>
+        <div class="row" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-2)">Location</span><strong>India (remote)</strong></div>
+        <div class="row" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)"><span style="color:var(--text-2)">Focus</span><strong>Bots · AI · Flutter</strong></div>
+        <div class="row" style="display:flex;justify-content:space-between;padding:12px 0"><span style="color:var(--text-2)">Reply time</span><strong>&lt; 24h</strong></div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section class="section">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">// about</span>
-      <h2 class="title">A builder who ships in the open.</h2>
-      <p class="lead">Self-taught full-stack developer. I spend most of my time on Telegram bots, AI assistants and Flutter apps. Every project lives on GitHub — no black boxes.</p>
+      <div class="left">
+        <span class="eyebrow"><span class="num">03</span> / EXPERIENCE</span>
+        <h2 class="title">A career built around useful change.</h2>
+        <p class="lead">Operations gave me the context; building gave me a way to remove the friction I could see.</p>
+      </div>
     </div>
-    <div class="bento">
-      <div class="card wide reveal"><div class="icon">⚡</div><h3>What I do</h3><p>Design and ship end-to-end products — from bot logic and APIs to Android apps and web dashboards.</p></div>
-      <div class="card reveal reveal-delay-1"><div class="icon">🤖</div><h3>Bots &amp; AI</h3><p>Telegram bots, AI chatbots, automation pipelines.</p></div>
-      <div class="card reveal reveal-delay-2"><div class="icon">📱</div><h3>Mobile</h3><p>Flutter &amp; Dart apps for Android &amp; TV.</p></div>
-      <div class="card reveal reveal-delay-1"><div class="icon">🌐</div><h3>Web</h3><p>React, Next.js, vanilla JS, PHP.</p></div>
-      <div class="card reveal reveal-delay-2"><div class="icon">🛠</div><h3>DevOps</h3><p>Docker, VPS, CI/CD, self-hosting.</p></div>
-      <div class="card wide reveal reveal-delay-3"><div class="icon">📍</div><h3>Based in India</h3><p>Working remotely, collaborating globally. Fastest on Telegram — @blaze_nxt.</p></div>
+    <div class="exp">
+      <div class="exp-item reveal">
+        <div class="when">Now</div>
+        <div>
+          <h3>BlazeNXT</h3>
+          <div class="role">Founder &amp; Full-Stack Developer</div>
+          <p>Building Telegram bots, AI assistants, Flutter apps and full-stack web platforms. Shipping nine open-source projects.</p>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="when">2023—25</div>
+        <div>
+          <h3>Independent</h3>
+          <div class="role">Freelance Developer</div>
+          <p>Bots, automation pipelines, mobile apps and web dashboards for clients across industries.</p>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="when">2022</div>
+        <div>
+          <h3>Self-taught</h3>
+          <div class="role">First bots in Python</div>
+          <p>Music bots, referral systems, admin panels — the start of the journey.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<!-- FIELD KIT -->
+<section class="section" style="background:var(--bg-2)">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">// skills</span>
-      <h2 class="title">The stack I actually ship with.</h2>
-      <p class="lead">Measured from my own public repos, not guesswork.</p>
+      <div class="left">
+        <span class="eyebrow"><span class="num">04</span> / FIELD KIT</span>
+        <h2 class="title">How I turn intent into execution.</h2>
+        <p class="lead">Fast delivery matters when the result is useful in the real workflow.</p>
+      </div>
     </div>
-    <div class="bento">
-      <div class="card reveal"><div class="skill"><div class="skill-top"><span>Python (Bots / AI / Automation)</span><small>95%</small></div><div class="bar"><i data-fill="95"></i></div></div></div>
-      <div class="card reveal reveal-delay-1"><div class="skill"><div class="skill-top"><span>JavaScript / TypeScript</span><small>90%</small></div><div class="bar"><i data-fill="90"></i></div></div></div>
-      <div class="card reveal reveal-delay-2"><div class="skill"><div class="skill-top"><span>Frontend (React / Next.js)</span><small>88%</small></div><div class="bar"><i data-fill="88"></i></div></div></div>
-      <div class="card reveal"><div class="skill"><div class="skill-top"><span>Flutter / Dart (Android &amp; TV)</span><small>82%</small></div><div class="bar"><i data-fill="82"></i></div></div></div>
-      <div class="card reveal reveal-delay-1"><div class="skill"><div class="skill-top"><span>DevOps (Docker / VPS / CI)</span><small>78%</small></div><div class="bar"><i data-fill="78"></i></div></div></div>
-      <div class="card reveal reveal-delay-2"><div class="skill"><div class="skill-top"><span>PHP / Backend</span><small>75%</small></div><div class="bar"><i data-fill="75"></i></div></div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px" class="reveal">
+      <div>
+        <div class="skill-row"><span class="name">Python (Bots / AI / Automation)</span><div class="bar-wrap"><i data-fill="95"></i></div></div>
+        <div class="skill-row"><span class="name">JavaScript / TypeScript</span><div class="bar-wrap"><i data-fill="90"></i></div></div>
+        <div class="skill-row"><span class="name">Frontend (React / Next.js)</span><div class="bar-wrap"><i data-fill="88"></i></div></div>
+      </div>
+      <div>
+        <div class="skill-row"><span class="name">Flutter / Dart (Android &amp; TV)</span><div class="bar-wrap"><i data-fill="82"></i></div></div>
+        <div class="skill-row"><span class="name">DevOps (Docker / VPS / CI)</span><div class="bar-wrap"><i data-fill="78"></i></div></div>
+        <div class="skill-row"><span class="name">PHP / Backend</span><div class="bar-wrap"><i data-fill="75"></i></div></div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="section">
   <div class="wrap">
     <div class="contact-box reveal">
-      <span class="eyebrow" style="justify-content:center">// contact</span>
+      <span class="eyebrow"><span class="num">05</span> / CONTACT</span>
       <h2>Got a project in mind?</h2>
       <p>I'm open to freelance work, collaborations and interesting problems. Fastest reply on Telegram.</p>
-      <div class="hero-cta" style="justify-content:center">
+      <div class="hero-cta">
         <a href="https://t.me/blaze_nxt" target="_blank" rel="noopener" class="btn btn-primary">Message on Telegram</a>
         <a href="mailto:bipulkumar@bk.run.place" class="btn btn-ghost">Send email</a>
       </div>
-      <div class="contact-links">
+      <div class="contact-links" style="margin-top:24px">
         <a class="contact-link" href="https://github.com/blazenxt" target="_blank" rel="noopener">GitHub</a>
         <a class="contact-link" href="https://t.me/blaze_nxt" target="_blank" rel="noopener">Telegram</a>
         <a class="contact-link" href="mailto:bipulkumar@bk.run.place">Email</a>
@@ -494,7 +528,7 @@ footer a:hover{color:var(--cyan);text-shadow:0 0 6px rgba(0,240,255,.4)}
 <script>
 const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-const bio = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.querySelectorAll('.bar i').forEach(b=>{ b.style.width = b.dataset.fill + '%';}); bio.unobserve(e.target);} });},{threshold:.2});
+const bio = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.querySelectorAll('.bar-wrap i').forEach(b=>{ b.style.width = b.dataset.fill + '%';}); bio.unobserve(e.target);} });},{threshold:.2});
 document.querySelectorAll('.section').forEach(s=>bio.observe(s));
 </script>
 </body>
