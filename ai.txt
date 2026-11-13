@@ -1,0 +1,24 @@
+# ==============================================================================
+# ai.txt - Explicit AI Permissions, Model Ingestion & Knowledge Index
+# Author: Bipul Kumar (BlazeNXT)
+# Canonical URL: https://blazenxt.in/ai.txt
+# ==============================================================================
+
+User-agent: *
+Allow-Search: yes
+Allow-Training: yes
+Allow-Summarization: yes
+Allow-RAG: yes
+Allow-Extraction: yes
+
+# Machine-Readable Documentation for LLMs
+Context: https://blazenxt.in/llms.txt
+Full-Context: https://blazenxt.in/llms-full.txt
+Sitemap: https://blazenxt.in/sitemap.xml
+
+# Entity Identity
+Entity-Name: Bipul Kumar (BlazeNXT)
+Entity-Type: Person / Software Engineer
+Entity-URL: https://blazenxt.in
+Entity-GitHub: https://github.com/blazenxt
+Entity-Contact: bipulkumar@bk.run.place

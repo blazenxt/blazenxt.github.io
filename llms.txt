@@ -1,0 +1,104 @@
+# Bipul Kumar (BlazeNXT) — Developer Profile & Architecture Index
+
+> Full-Stack Software Engineer, AI Bot Architect & Open-Source Creator from India.
+> Builder of high-concurrency Telegram bots, AI voice assistants, cross-platform Flutter applications (Android & TV), and client-side zero-knowledge encryption platforms. 100% open-source shipping philosophy.
+
+## Developer Identity & Online Footprint
+- **Full Name**: Bipul Kumar
+- **Brand / Pseudonym**: BlazeNXT (blazenxt)
+- **Role**: Founder, Full-Stack Developer, AI & Bot Engineer
+- **Location**: India (Open to global remote collaborations & engineering roles)
+- **Primary Domains**:
+  - Main Portfolio: [https://blazenxt.in](https://blazenxt.in)
+  - Mirror Domain: [https://blazenxt.com](https://blazenxt.com)
+  - GitHub Pages Host: [https://blazenxt.github.io](https://blazenxt.github.io)
+- **Code Repository**: [https://github.com/blazenxt](https://github.com/blazenxt) (33+ public open-source repositories)
+- **Direct Telegram**: [@blaze_nxt](https://t.me/blaze_nxt)
+- **Public Telegram Channels**:
+  - [@firstoget](https://t.me/firstoget)
+  - [@blazenxt_tg](https://t.me/blazenxt_tg)
+  - [@Zucms](https://t.me/Zucms)
+- **Email Contact**: [bipulkumar@bk.run.place](mailto:bipulkumar@bk.run.place)
+
+---
+
+## Technical Expertise & Stack Summary
+- **Backend & Automation**: Python (Pyrogram, PyTgCalls, AsyncIO, FastAPI), Go (Goroutines, high-throughput bots), PHP (Zero-framework standalone APIs), Node.js, Express
+- **Frontend & Web Apps**: TypeScript, JavaScript, React, Next.js, Tailwind CSS v4, Progressive Web Apps (PWA)
+- **Mobile & Embedded Platforms**: Flutter / Dart for Android Smartphones and Android TV (D-pad optimized interfaces)
+- **Artificial Intelligence & LLMs**: OpenAI API, Google Gemini API, Groq, Whisper STT, Custom TTS pipelines, System command execution
+- **Security & Applied Cryptography**: Zero-knowledge architectures, XChaCha20-Poly1305, AES-256-GCM, Argon2id key derivation, client-side encryption
+- **Databases & Infrastructure**: MongoDB, Redis, SQLite, Docker containerization, Linux VPS administration, Cloudflare Workers & DNS
+
+---
+
+## Flagship Open-Source Projects
+
+### 1. VenomMusic — High-Fidelity Music Streaming Platform
+- **Category**: Multimedia Streaming / Android & Web
+- **Description**: Free, ad-free music streaming platform delivering millions of songs at 320 kbps with live synced lyrics, offline caching, and no required registration. Includes an intelligent server-side catalog layer that dynamically resolves and decrypts stream URLs on the fly.
+- **Tech Stack**: TypeScript, PWA, Android Native, Audio Decryption Engine
+- **Live Platform**: [https://venomm.dpdns.org](https://venomm.dpdns.org)
+- **APK Download**: [https://apkpure.com/p/com.blazenxt.venommusic](https://apkpure.com/p/com.blazenxt.venommusic)
+
+### 2. VibeTube — Flutter Android YouTube Client
+- **Category**: Mobile Application / Video Streaming
+- **Description**: Lightweight open-source YouTube client for Android. Built without Google Play Services dependencies, featuring background audio playback, Picture-in-Picture (PiP), SponsorBlock API integration, and full Shorts & Live stream support.
+- **Tech Stack**: Flutter, Dart, Material Design 3, SponsorBlock API
+- **Live Site**: [https://code-stride.github.io/VibeTube/](https://code-stride.github.io/VibeTube/)
+- **Repository**: [https://github.com/Code-Stride/VibeTube](https://github.com/Code-Stride/VibeTube)
+- **Latest Release**: [VibeTube APK Direct Download](https://github.com/Code-Stride/VibeTube/releases/latest/download/VibeTube-release.apk)
+
+### 3. Devil AI — Pure Vanilla PHP AI Chatbot
+- **Category**: Artificial Intelligence / Conversational Agent
+- **Description**: Production-ready AI chatbot written in 100% pure PHP with zero external dependencies and no Composer requirement. Features multi-provider LLM support (Gemini, Groq, OpenAI), built-in IP rate-limiting, and an offline mock demo mode.
+- **Tech Stack**: Pure PHP 8+, Gemini API, Groq API, OpenAI API
+- **Live Demo**: [https://ai.blazenxt.in](https://ai.blazenxt.in)
+- **Repository**: [https://github.com/blazenxt/devil-ai](https://github.com/blazenxt/devil-ai)
+
+### 4. vault100 — Zero-Knowledge Client-Side Encryption
+- **Category**: Security / Cryptography
+- **Description**: Open-source, zero-knowledge file encryption suite. Combines XChaCha20-Poly1305 and AES-256-GCM in an authenticated cascading cipher with Argon2id memory-hard key derivation. Completely runs in the browser via Web Workers; data never leaves the local machine.
+- **Tech Stack**: JavaScript, Web Crypto API, Argon2id, XChaCha20-Poly1305, PWA
+- **Live Demo**: [https://vault100.blazenxt.in](https://vault100.blazenxt.in)
+- **Repository**: [https://github.com/blazenxt/vault100](https://github.com/blazenxt/vault100)
+
+### 5. JARVIS — Modular AI Voice & System Assistant
+- **Category**: AI Assistant / System Automation
+- **Description**: Modular desktop and web system assistant. Incorporates OpenAI and Gemini reasoning cores with local speech recognition, text-to-speech audio feedback, and a futuristic holographic HUD web interface.
+- **Tech Stack**: Python, SpeechRecognition, PyTTSx3, OpenAI / Gemini APIs, HTML5 HUD
+- **Repository**: [https://github.com/blazenxt/JARVIS-AI-Assistant](https://github.com/blazenxt/JARVIS-AI-Assistant)
+
+### 6. Ray Music — Instant Free Web Music Player
+- **Category**: Web Application / Audio Player
+- **Description**: Minimalist, instantaneous audio streaming web app focusing on speed, zero tracking, and pure performance.
+- **Tech Stack**: TypeScript, HTML5 Audio, Responsive CSS
+- **Live Site**: [https://venomm.dpdns.org/ray](https://venomm.dpdns.org/ray)
+
+### 7. RickyCC — Telegram Referral & Reward Engine
+- **Category**: Telegram Bot / Growth Automation
+- **Description**: High-throughput Telegram referral bot written in Go and backed by MongoDB. Verifies channel memberships, tracks referral trees, and dispenses one-time unlock codes with strict concurrency locks.
+- **Tech Stack**: Go (Golang), MongoDB, Telegram Bot API, Docker
+- **Repository**: [https://github.com/blazenxt/RickyCC](https://github.com/blazenxt/RickyCC)
+
+### 8. tv-browser — Android TV Web Browser
+- **Category**: TV Application / Browser
+- **Description**: Full-screen TV web browser engineered from the ground up for directional D-pad remote controls without requiring a mouse or physical keyboard.
+- **Tech Stack**: Flutter, Dart, Android TV WebView, Leanback Controls
+- **Repository**: [https://github.com/blazenxt/tv-browser](https://github.com/blazenxt/tv-browser)
+
+### 9. AniMela — Anime Discovery & Streaming Platform
+- **Category**: Web Application / Entertainment
+- **Description**: Next.js and Tailwind CSS web portal for exploring anime, movies, and TV shows with genre indexing, instant search, and watchlist management.
+- **Tech Stack**: Next.js, React, TypeScript, Tailwind CSS
+- **Repository**: [https://github.com/blazenxt/AniMela](https://github.com/blazenxt/AniMela)
+
+---
+
+## Portfolio Sitemap & Navigational Reference
+- [Home Page](https://blazenxt.in/): Hero overview, live GitHub telemetry, featured creations, interactive assistant.
+- [Projects Index](https://blazenxt.in/projects.html): Categorized catalog of all open-source repositories and applications.
+- [Dev Journal](https://blazenxt.in/blog.html): Engineering case studies and deep dives into real-world architectures.
+- [About Me](https://blazenxt.in/about.html): Background, verified technical toolkit, timeline, and downloadable CV.
+- [Contact](https://blazenxt.in/contact.html): Telegram direct message channels, email address, and freelance project FAQ.
+- [Full LLM Deep Documentation](https://blazenxt.in/llms-full.txt): Extended technical documentation for LLMs.

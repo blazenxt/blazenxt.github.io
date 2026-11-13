@@ -1,0 +1,107 @@
+# ==============================================================================
+# robots.txt for blazenxt.in / blazenxt.com / blazenxt.github.io
+# Comprehensive AI Crawler & Search Engine Optimization Directives
+# Author: Bipul Kumar (BlazeNXT)
+# Canonical Origin: https://blazenxt.in
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. AI Search Engines, Answer Engines & LLM Conversational Agents
+# Explicitly allowing all premier AI crawlers for indexation, search & citations
+# ------------------------------------------------------------------------------
+
+# OpenAI: ChatGPT Search, SearchGPT, GPTBot, ChatGPT-User
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic: Claude, ClaudeBot, Claude-Web
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+Allow: /
+
+# Google: Gemini, SGE (Search Generative Experience), Vertex AI & Extended Crawlers
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+Allow: /
+
+# Perplexity AI: PerplexityBot & Search
+User-agent: PerplexityBot
+Allow: /
+
+# Apple: Applebot & Applebot-Extended (Apple Intelligence & Siri Knowledge)
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing / Copilot: Bingbot, msnbot & Copilot Search
+User-agent: Bingbot
+User-agent: msnbot
+User-agent: BingPreview
+Allow: /
+
+# Meta: Meta-ExternalAgent, Meta-ExternalFetcher, FacebookBot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: FacebookBot
+Allow: /
+
+# Mistral AI
+User-agent: MistralBot
+Allow: /
+
+# Cohere: cohere-ai, cohere-training-data-crawler
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Amazon: Amazonbot
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (Foundation model pre-training & open research)
+User-agent: CCBot
+Allow: /
+
+# Additional AI, Knowledge & Answer Crawlers
+User-agent: DuckDuckBot
+User-agent: YouBot
+User-agent: Diffbot
+User-agent: Timpibot
+User-agent: Webzio-Extended
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 2. Traditional Web Search Crawlers
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Yandex
+User-agent: Baiduspider
+User-agent: Slurp
+User-agent: Sogou
+User-agent: ia_archiver
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 3. Universal Fallback (Allow all other well-behaved crawlers)
+# ------------------------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# ------------------------------------------------------------------------------
+# 4. Sitemaps & Host Information
+# ------------------------------------------------------------------------------
+Host: blazenxt.in
+Sitemap: https://blazenxt.in/sitemap.xml
+Sitemap: https://blazenxt.com/sitemap.xml
+Sitemap: https://blazenxt.github.io/sitemap.xml

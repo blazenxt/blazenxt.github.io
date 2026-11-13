@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- 1. Homepage -->
+  <url>
+    <loc>https://blazenxt.in/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blazenxt.in/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blazenxt.in/" />
+    <xhtml:link rel="alternate" href="https://blazenxt.com/" />
+    <xhtml:link rel="alternate" href="https://blazenxt.github.io/" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://blazenxt.in/logo.png</image:loc>
+      <image:title>BlazeNXT Logo</image:title>
+      <image:caption>Official logo of BlazeNXT (Bipul Kumar)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blazenxt.in/avatar.png</image:loc>
+      <image:title>Bipul Kumar (BlazeNXT) Avatar</image:title>
+      <image:caption>Profile picture of Bipul Kumar</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Projects Catalog -->
+  <url>
+    <loc>https://blazenxt.in/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blazenxt.in/projects.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blazenxt.in/projects.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.com/projects.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.github.io/projects.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://blazenxt.in/previews/venommusic.jpg</image:loc>
+      <image:title>VenomMusic Streaming App</image:title>
+      <image:caption>VenomMusic — Free 320kbps music streaming app by BlazeNXT</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blazenxt.in/previews/vibetube.jpg</image:loc>
+      <image:title>VibeTube Flutter YouTube Client</image:title>
+      <image:caption>VibeTube — Open-source YouTube Android client</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blazenxt.in/previews/devilai.jpg</image:loc>
+      <image:title>Devil AI Pure PHP Chatbot</image:title>
+      <image:caption>Devil AI — Pure PHP chatbot supporting Gemini, Groq, and OpenAI</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://blazenxt.in/previews/vault100.jpg</image:loc>
+      <image:title>vault100 Zero-Knowledge Encryption</image:title>
+      <image:caption>vault100 — Client-side AES-256 and XChaCha20 file encryption</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Dev Journal / Blog -->
+  <url>
+    <loc>https://blazenxt.in/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blazenxt.in/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blazenxt.in/blog.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.com/blog.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.github.io/blog.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 4. About Developer -->
+  <url>
+    <loc>https://blazenxt.in/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blazenxt.in/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blazenxt.in/about.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.com/about.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.github.io/about.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blazenxt.in/avatar.png</image:loc>
+      <image:title>Bipul Kumar (BlazeNXT)</image:title>
+    </image:image>
+  </url>
+
+  <!-- 5. Contact & Hire -->
+  <url>
+    <loc>https://blazenxt.in/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blazenxt.in/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blazenxt.in/contact.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.com/contact.html" />
+    <xhtml:link rel="alternate" href="https://blazenxt.github.io/contact.html" />
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 6. LLM Machine-Readable Index -->
+  <url>
+    <loc>https://blazenxt.in/llms.txt</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 7. Full LLM Documentation -->
+  <url>
+    <loc>https://blazenxt.in/llms-full.txt</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

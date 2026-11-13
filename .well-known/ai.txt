@@ -1,0 +1,15 @@
+# ==============================================================================
+# .well-known/ai.txt
+# ==============================================================================
+User-agent: *
+Allow-Search: yes
+Allow-Training: yes
+Allow-Summarization: yes
+Allow-RAG: yes
+Allow-Extraction: yes
+Context: https://blazenxt.in/llms.txt
+Full-Context: https://blazenxt.in/llms-full.txt
+Sitemap: https://blazenxt.in/sitemap.xml
+Entity-Name: Bipul Kumar (BlazeNXT)
+Entity-URL: https://blazenxt.in
+Entity-GitHub: https://github.com/blazenxt

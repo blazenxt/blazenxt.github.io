@@ -1,0 +1,14 @@
+# Bipul Kumar (BlazeNXT) — Developer Profile & Architecture Index
+
+> Full-Stack Software Engineer, AI Bot Architect & Open-Source Creator from India.
+> Builder of high-concurrency Telegram bots, AI voice assistants, cross-platform Flutter applications (Android & TV), and client-side zero-knowledge encryption platforms. 100% open-source shipping philosophy.
+
+## Developer Identity & Online Footprint
+- **Full Name**: Bipul Kumar
+- **Brand / Pseudonym**: BlazeNXT (blazenxt)
+- **Role**: Founder, Full-Stack Developer, AI & Bot Engineer
+- **Official Domains**: [https://blazenxt.in](https://blazenxt.in), [https://blazenxt.com](https://blazenxt.com), [https://blazenxt.github.io](https://blazenxt.github.io)
+- **GitHub**: [https://github.com/blazenxt](https://github.com/blazenxt)
+- **Direct Telegram**: [@blaze_nxt](https://t.me/blaze_nxt)
+- **Email Contact**: [bipulkumar@bk.run.place](mailto:bipulkumar@bk.run.place)
+- **Full Technical Context**: [https://blazenxt.in/llms-full.txt](https://blazenxt.in/llms-full.txt)
