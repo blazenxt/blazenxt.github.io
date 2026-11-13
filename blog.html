@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
+<script>document.documentElement.classList.add('js');document.documentElement.setAttribute('data-theme','dark');try{localStorage.removeItem('pf-theme');}catch(e){}</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.bar i{width:100%!important}.stat b,.ghs b{opacity:1!important}</style></noscript>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -112,9 +114,9 @@
 <style>
 :root{
   color-scheme: dark;
-  --bg:#0a0e1a; --bg-2:#111827;
+  --bg:#070a13; --bg-2:#0e1424;
   --panel:rgba(255,255,255,.05); --panel-2:rgba(255,255,255,.08);
-  --text:#eef2ff; --muted:#9aa6c7;
+  --text:#f8fafc; --muted:#a5b4d4;
   --line:rgba(255,255,255,.12); --line-2:rgba(255,255,255,.22);
   --accent:#6366f1; --accent-2:#22d3ee; --accent-3:#f59e0b; --accent-4:#ec4899; --ok:#10b981;
   --radius:22px;
@@ -490,8 +492,18 @@ footer{border-top:1px solid var(--line);padding:48px 24px 34px;color:var(--muted
 }
 
 /* Reveal */
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
-.reveal.in{opacity:1;transform:none}
+/* Reveal: default visible for no-JS, scrapers, and headless capture */
+.reveal{opacity:1;transform:none;transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+html.js .reveal:not(.in){opacity:0;transform:translateY(24px)}
+html.js .reveal.in{opacity:1;transform:none}
+
+@media print{
+  .reveal{opacity:1!important;transform:none!important}
+  .ambient,#progress,.fab-stack,.chat-panel,.scroll-cue,.marquee,.search-wrap,.filters,.btn,.icon-btn{display:none!important}
+  header.nav{position:static!important;background:none!important;border:none!important}
+  body{background:#fff!important;color:#000!important}
+  .card,.b-card,.project,.post,.stat{break-inside:avoid;box-shadow:none!important;background:#fff!important;color:#000!important;border:1px solid #ccc!important}
+}
 
 /* Responsive */
 @media (max-width:960px){
